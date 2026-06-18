@@ -8,7 +8,7 @@
     "build": "eleventy",
     "start": "eleventy --serve --port=8080",
     "dev": "eleventy --serve --port=8080",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf docs",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "devDependencies": {

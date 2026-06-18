@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 638" width="1088" height="638">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&amp;display=swap');
+    </style>
+
+    <pattern id="fence-bg" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect x="28" y="0" width="4" height="60" fill="rgba(255,255,255,0.025)"/>
+      <rect x="0" y="14" width="60" height="3" fill="rgba(255,255,255,0.025)"/>
+      <rect x="0" y="38" width="60" height="3" fill="rgba(255,255,255,0.025)"/>
+    </pattern>
+
+    <linearGradient id="amber-bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#e0952f"/>
+      <stop offset="100%" stop-color="#a8621a"/>
+    </linearGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="transparent"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.22)"/>
+    </radialGradient>
+
+    <clipPath id="card-clip">
+      <rect x="0" y="0" width="1088" height="638"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1088" height="638" fill="#232527"/>
+  <rect x="0" y="0" width="1088" height="638" fill="url(#fence-bg)"/>
+  <rect x="0" y="0" width="1088" height="638" fill="url(#vignette)"/>
+
+  <!-- Amber left bar -->
+  <rect x="0" y="0" width="38" height="638" fill="url(#amber-bar)"/>
+
+  <!-- Top + bottom amber hairlines -->
+  <rect x="38" y="0"   width="1050" height="3" fill="#c97c2a" opacity="0.5"/>
+  <rect x="38" y="635" width="1050" height="3" fill="#c97c2a" opacity="0.5"/>
+
+  <!-- Decorative large fence posts — right side, very faint -->
+  <g opacity="0.055" clip-path="url(#card-clip)">
+    <rect x="760"  y="0" width="22" height="638" rx="6" fill="white"/>
+    <rect x="828"  y="0" width="22" height="638" rx="6" fill="white"/>
+    <rect x="896"  y="0" width="22" height="638" rx="6" fill="white"/>
+    <rect x="964"  y="0" width="22" height="638" rx="6" fill="white"/>
+    <rect x="1032" y="0" width="22" height="638" rx="6" fill="white"/>
+    <rect x="760"  y="150" width="294" height="16" rx="5" fill="white"/>
+    <rect x="760"  y="320" width="294" height="16" rx="5" fill="white"/>
+    <rect x="760"  y="490" width="294" height="16" rx="5" fill="white"/>
+  </g>
+
+  <!-- ── FENCE ICON — inline with company name ── -->
+  <!-- 3 posts + 2 rails, vertically centred on the FROSTLINE baseline -->
+  <g transform="translate(76, 128)">
+    <rect x="0"  y="0" width="10" height="62" rx="4" fill="white" opacity="0.88"/>
+    <rect x="24" y="0" width="10" height="62" rx="4" fill="white" opacity="0.88"/>
+    <rect x="48" y="0" width="10" height="62" rx="4" fill="white" opacity="0.88"/>
+    <rect x="0"  y="14" width="58" height="10" rx="4" fill="#c97c2a"/>
+    <rect x="0"  y="38" width="58" height="10" rx="4" fill="#c97c2a"/>
+  </g>
+
+  <!-- ── COMPANY NAME — vertically centred on top half ── -->
+  <text x="154" y="185"
+        font-family="'Barlow', Arial Black, sans-serif"
+        font-weight="800"
+        font-size="80"
+        fill="#FFFFFF"
+        letter-spacing="-2">FROSTLINE</text>
+
+  <text x="158" y="242"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="400"
+        font-size="46"
+        fill="#c97c2a"
+        letter-spacing="16">FENCE</text>
+
+  <text x="158" y="278"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="400"
+        font-size="17"
+        fill="rgba(255,255,255,0.42)"
+        letter-spacing="1">Built Tough. Built to Last.</text>
+
+  <!-- Divider -->
+  <line x1="76" y1="306" x2="560" y2="306" stroke="#c97c2a" stroke-width="1" opacity="0.4"/>
+
+  <!-- ── PERSON ── -->
+  <text x="76" y="360"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="700"
+        font-size="28"
+        fill="#FFFFFF">David Dias</text>
+
+  <text x="76" y="390"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="600"
+        font-size="16"
+        fill="#c97c2a"
+        letter-spacing="3">CEO</text>
+
+  <!-- ── CONTACT ── -->
+  <text x="76" y="438"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="400"
+        font-size="19"
+        fill="rgba(255,255,255,0.72)">612-212-2815</text>
+
+  <text x="76" y="468"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="400"
+        font-size="19"
+        fill="rgba(255,255,255,0.72)">info@frostlinefence.com</text>
+
+  <text x="76" y="498"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="600"
+        font-size="19"
+        fill="rgba(255,255,255,0.85)">frostlinefence.com</text>
+
+  <!-- ── SERVICE AREA PILL ── -->
+  <rect x="76" y="538" width="262" height="30" rx="15"
+        fill="rgba(201,124,42,0.12)" stroke="#c97c2a" stroke-width="1"/>
+  <text x="207" y="558"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="600"
+        font-size="13"
+        fill="#c97c2a"
+        text-anchor="middle"
+        letter-spacing="2">TWIN CITIES METRO</text>
+
+  <!-- Licensed & Insured — top right -->
+  <rect x="858" y="60" width="174" height="28" rx="14"
+        fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="945" y="79"
+        font-family="'Barlow', Arial, sans-serif"
+        font-weight="600"
+        font-size="12"
+        fill="rgba(255,255,255,0.5)"
+        text-anchor="middle"
+        letter-spacing="1.5">LICENSED &amp; INSURED</text>
+</svg>

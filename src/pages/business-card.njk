@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+title: Business Card Preview
+permalink: /business-card/
+eleventyExcludeFromCollections: true
+---
+
+<section class="section section--muted">
+  <div class="container container--narrow center">
+    <h1 class="section__title">Business Card — Print Preview</h1>
+    <p class="section__subtitle">Front side &bull; 3.5" × 2.0" trim &bull; 3.625" × 2.125" full bleed</p>
+
+    <!-- Card preview at screen scale -->
+    <div style="margin: 2rem auto; max-width: 700px;">
+      <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.3);">
+        <img src="/assets/images/business-card-front.svg"
+             alt="Frostline Fence business card front"
+             style="width: 100%; display: block;"/>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-text-muted);">
+        Preview shown at screen resolution. The SVG file is resolution-independent and will render crisp at 300 DPI for print.
+      </p>
+    </div>
+
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+      <a href="/assets/images/business-card-front.svg" download="frostlinefence-business-card.svg" class="btn btn--primary">
+        Download SVG
+      </a>
+      <a href="/assets/images/business-card-front.svg" target="_blank" class="btn btn--outline">
+        Open Full Size
+      </a>
+    </div>
+
+    <div style="margin-top: 2.5rem; background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 12px; padding: 1.5rem; text-align: left; font-size: 0.9rem;">
+      <h3 style="margin-bottom: 1rem; font-size: 1rem;">Tank Prints Upload Instructions</h3>
+      <ul style="margin: 0; padding-left: 1.25rem; color: var(--c-text-muted); display: flex; flex-direction: column; gap: 0.5rem;">
+        <li>Open the SVG in a browser, then <strong>Print → Save as PDF</strong> at full size, or use Inkscape/Illustrator to export a 300 DPI PNG.</li>
+        <li>Final export should be <strong>1088 × 638 px</strong> (full bleed) or larger.</li>
+        <li>All text is inside the safe area (0.125" from trim edge on all sides).</li>
+        <li>Tank Prints accepts SVG, PDF, PNG, or JPG — PNG at 300 DPI is safest for color accuracy.</li>
+      </ul>
+    </div>
+  </div>
+</section>

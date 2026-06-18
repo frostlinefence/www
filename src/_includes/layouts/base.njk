@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/images/favicon.svg" />
+    <meta name="description" content="{{ description or site.description }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title or site.title }}" />
+    <meta property="og:description" content="{{ description or site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ title or site.title }}" />
+    <meta name="twitter:description" content="{{ description or site.description }}" />
+
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#2b2d2e" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Barlow+Condensed:wght@700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Barlow+Condensed:wght@700&family=Inter:wght@400;500;600&display=swap" /></noscript>
+
+    <link rel="preload" href="/assets/css/site.css?v={{ 'src/assets/css/site.css' | assetHash }}" as="style" />
+    <link rel="stylesheet" href="/assets/css/site.css?v={{ 'src/assets/css/site.css' | assetHash }}" />
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "email": "{{ site.email }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.address.street }}",
+        "addressLocality": "{{ site.address.city }}",
+        "addressRegion": "{{ site.address.state }}",
+        "postalCode": "{{ site.address.zip }}",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-14:00",
+      "areaServed": {{ site.serviceAreas | dump | safe }}
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="/" class="site-header__logo">
+          <svg class="site-header__logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="3" y="4" width="3" height="24" rx="1.5" fill="currentColor"/>
+            <rect x="13" y="4" width="3" height="24" rx="1.5" fill="currentColor"/>
+            <rect x="23" y="4" width="3" height="24" rx="1.5" fill="currentColor"/>
+            <rect x="3" y="9" width="23" height="3" rx="1.5" fill="currentColor"/>
+            <rect x="3" y="18" width="23" height="3" rx="1.5" fill="currentColor"/>
+          </svg>
+          <span>Frostline Fence</span>
+        </a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="main-nav" aria-label="Main navigation">
+          <a href="/" class="site-nav__link{% if page.url == '/' %} is-active{% endif %}">Home</a>
+          <a href="/services/" class="site-nav__link{% if page.url == '/services/' %} is-active{% endif %}">Services</a>
+          <a href="/about/" class="site-nav__link{% if page.url == '/about/' %} is-active{% endif %}">About</a>
+          <a href="/contact/" class="site-nav__link{% if page.url == '/contact/' %} is-active{% endif %}">Contact</a>
+          <a href="/contact/" class="btn btn--sm btn--primary site-nav__cta">Free Estimate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      {{ content | safe }}
+    </main>
+
+    {% include "components/footer.njk" %}
+
+    <script src="/assets/js/main.js?v={{ 'src/assets/js/main.js' | assetHash }}" defer></script>
+  </body>
+</html>

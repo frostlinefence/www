@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a href="/" class="site-footer__logo">Frostline Fence</a>
+      <p class="site-footer__tagline">{{ site.tagline }}</p>
+    </div>
+
+    <div class="site-footer__col">
+      <h3 class="site-footer__heading">Services</h3>
+      <ul class="site-footer__list">
+        {% for service in services %}
+        <li><a href="/services/#{{ service.id }}">{{ service.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h3 class="site-footer__heading">Service Areas</h3>
+      <ul class="site-footer__list">
+        {% for area in site.serviceAreas %}
+        <li>{{ area }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer__col">
+      <h3 class="site-footer__heading">Contact</h3>
+      <ul class="site-footer__list site-footer__contact">
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>{{ site.hours }}</li>
+        <li><a href="/contact/">Request an Estimate</a></li>
+      </ul>
+      <a href="/contact/" class="btn btn--primary btn--sm" style="margin-top:1rem;">Get a Free Estimate</a>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <p>&copy; {{ buildDate | truncate(4, false, '') }} Frostline Fence. All rights reserved.</p>
+  </div>
+</footer>

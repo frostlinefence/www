@@ -1,0 +1,29 @@
+{
+  "title": "Frostline Fence",
+  "tagline": "Built Tough. Built to Last.",
+  "description": "Frostline Fence installs wood, vinyl, chain link, aluminum, and farm fencing across the Twin Cities metro. Residential and commercial. Free estimates.",
+  "url": "https://frostlinefence.com",
+  "language": "en",
+  "email": "info@frostlinefence.com",
+  "address": {
+    "street": "123 Main Street",
+    "city": "Your City",
+    "state": "ST",
+    "zip": "00000"
+  },
+  "serviceAreas": [
+    "Minneapolis",
+    "St. Paul",
+    "Bloomington",
+    "Eden Prairie",
+    "Plymouth",
+    "Minnetonka",
+    "Edina",
+    "Burnsville",
+    "Eagan",
+    "Woodbury",
+    "Maple Grove",
+    "Brooklyn Park"
+  ],
+  "hours": "Mon–Fri 7am–5pm, Sat 8am–2pm"
+}

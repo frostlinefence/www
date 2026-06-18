@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+permalink: /about/
+title: About Us
+description: Frostline Fence is a local, family-owned fencing company serving residential, commercial, and agricultural customers. Learn about our story and values.
+---
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-hero__title">About Frostline Fence</h1>
+    <p class="page-hero__subtitle">Local. Family-owned. Built on reputation.</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container container--narrow">
+    <div class="prose">
+      <h2>Our Story</h2>
+      <p>Frostline Fence was founded on a simple idea: do the work right, use quality materials, and treat every customer's property like your own. We've been installing fences in this community for years, and we've built our business entirely on referrals and repeat customers.</p>
+      <p>We're not a national chain. We're your neighbors. When you call us, you talk to the same people who show up to do the work. We take pride in every fence we install because our name is on it — and we have to drive past it.</p>
+
+      <h2>What We Stand For</h2>
+      <ul>
+        <li><strong>Honesty.</strong> We give you a straight quote and stick to it. No surprise charges at the end of the job.</li>
+        <li><strong>Quality.</strong> We only use materials we'd install on our own property. If we wouldn't put it in our yard, we won't put it in yours.</li>
+        <li><strong>Reliability.</strong> We show up when we say we will. We finish when we say we will. If something changes, we call you — you don't call us.</li>
+        <li><strong>Clean work.</strong> Every job ends with us hauling away all debris. You get a finished fence, not a pile of old posts and wire to deal with.</li>
+      </ul>
+
+      <h2>Licensed &amp; Insured</h2>
+      <p>We are fully licensed contractors and carry liability insurance on every job. You should never hire a fencing contractor who can't say the same.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--muted">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">Service Area</h2>
+      <p class="section__subtitle">We serve the following communities and surrounding areas:</p>
+    </div>
+    <ul class="area-list area-list--large">
+      {% for area in site.serviceAreas %}
+      <li>{{ area }}</li>
+      {% endfor %}
+    </ul>
+    <p class="area-note center">Not on the list? <a href="/contact/">Reach out</a> — we may still be able to help.</p>
+  </div>
+</section>
+
+<section class="section section--green">
+  <div class="container container--narrow center">
+    <h2 class="section__title section__title--light">Ready to Get Started?</h2>
+    <p class="section__subtitle section__subtitle--light">Contact us for a free, no-obligation estimate. We'll come to your property and give you a clear, itemized quote.</p>
+    <a href="/contact/" class="btn btn--white btn--lg">Get a Free Estimate</a>
+  </div>
+</section>

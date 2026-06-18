@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: Page Not Found
+description: The page you're looking for doesn't exist.
+permalink: /404.html
+---
+
+<section class="error-page">
+  <div class="container container--narrow center">
+    <div class="error-page__icon" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="8" width="6" height="48" rx="3" fill="currentColor" opacity="0.3"/>
+        <rect x="29" y="8" width="6" height="48" rx="3" fill="currentColor" opacity="0.3"/>
+        <rect x="52" y="8" width="6" height="48" rx="3" fill="currentColor" opacity="0.3"/>
+        <rect x="6" y="18" width="46" height="6" rx="3" fill="currentColor" opacity="0.3"/>
+        <rect x="6" y="36" width="46" height="6" rx="3" fill="currentColor" opacity="0.3"/>
+        <line x1="16" y1="16" x2="48" y2="48" stroke="#c0392b" stroke-width="4" stroke-linecap="round"/>
+        <line x1="48" y1="16" x2="16" y2="48" stroke="#c0392b" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h1 class="error-page__title">404 — Post Not Found</h1>
+    <p class="error-page__message">Looks like this page got pulled from the ground. Let's get you back on solid footing.</p>
+    <div class="error-page__actions">
+      <a href="/" class="btn btn--primary">Go Home</a>
+      <a href="/services/" class="btn btn--outline">Our Services</a>
+      <a href="/contact/" class="btn btn--outline">Contact Us</a>
+    </div>
+  </div>
+</section>

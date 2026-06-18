@@ -1,0 +1,67 @@
+[
+  {
+    "id": "wood",
+    "name": "Wood Fence",
+    "icon": "🌲",
+    "description": "Classic wood fencing that adds warmth, privacy, and curb appeal to any property. We install cedar, pine, and pressure-treated options built to handle the elements.",
+    "features": [
+      "Privacy, picket, and split-rail styles",
+      "Cedar, pine, or pressure-treated lumber",
+      "Custom heights and staining available",
+      "Rot-resistant post installation"
+    ],
+    "idealFor": "Residential privacy, backyard enclosures, decorative borders"
+  },
+  {
+    "id": "vinyl",
+    "name": "Vinyl Fence",
+    "icon": "⬜",
+    "description": "Low-maintenance vinyl fencing that looks great year after year with no painting or staining required. Resistant to rot, insects, and harsh weather.",
+    "features": [
+      "Never needs painting or staining",
+      "Resistant to rot, rust, and insects",
+      "Privacy, picket, and ranch rail styles",
+      "Available in white, tan, and gray"
+    ],
+    "idealFor": "Homeowners who want lasting good looks with minimal upkeep"
+  },
+  {
+    "id": "chain-link",
+    "name": "Chain Link Fence",
+    "icon": "🔗",
+    "description": "Durable, affordable chain link fencing for security and containment. Galvanized or vinyl-coated options available for residential and commercial applications.",
+    "features": [
+      "Galvanized or vinyl-coated wire",
+      "Heights from 3ft to 12ft",
+      "Privacy slats available",
+      "Commercial and residential grades"
+    ],
+    "idealFor": "Security perimeters, dog runs, commercial properties, ball courts"
+  },
+  {
+    "id": "aluminum",
+    "name": "Aluminum Fence",
+    "icon": "✦",
+    "description": "Elegant aluminum fencing that combines the look of traditional wrought iron with rust-free, low-maintenance durability. Perfect for pools, gardens, and front yards.",
+    "features": [
+      "Rust-free and powder-coated finish",
+      "Ornamental and flat-top styles",
+      "Pool code compliant options",
+      "Lifetime finish warranty"
+    ],
+    "idealFor": "Pool enclosures, front yards, gardens, decorative boundaries"
+  },
+  {
+    "id": "farm-ranch",
+    "name": "Farm & Ranch Fence",
+    "icon": "🐄",
+    "description": "Heavy-duty agricultural fencing for livestock containment and property boundary marking. We install barbed wire, high-tensile, board, and post-and-rail fencing.",
+    "features": [
+      "Barbed wire and high-tensile options",
+      "Board fence and post-and-rail",
+      "Large acreage installations",
+      "Gates and cattle guards available"
+    ],
+    "idealFor": "Livestock containment, pasture division, large rural properties"
+  }
+]

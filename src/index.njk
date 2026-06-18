@@ -1,0 +1,90 @@
+---
+layout: layouts/base.njk
+title: Professional Fencing Installation
+description: Frostline Fence installs wood, vinyl, chain link, aluminum, and farm fencing. Serving residential and commercial properties. Free estimates.
+---
+
+<section class="hero">
+  <div class="hero__content">
+    <p class="hero__eyebrow">Licensed &amp; Insured</p>
+    <h1 class="hero__title">{{ site.tagline }}</h1>
+    <p class="hero__subtitle">Professional fence installation for homes, businesses, and farms. Quality materials, expert craftsmanship, free estimates.</p>
+    <div class="hero__actions">
+      <a href="/contact/" class="btn btn--primary btn--lg">Get a Free Estimate</a>
+      <a href="/services/" class="btn btn--outline btn--lg">Our Services</a>
+    </div>
+    <p class="hero__phone">Questions? <a href="/contact/">Send us a message</a> and we'll get back to you within one business day.</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">What We Install</h2>
+      <p class="section__subtitle">From backyard privacy to farm perimeters — we handle it all.</p>
+    </div>
+    <div class="services-overview">
+      {% for service in services %}
+      <div class="services-overview__item">
+        <span class="services-overview__icon">{{ service.icon }}</span>
+        <h3 class="services-overview__name">{{ service.name }}</h3>
+        <p class="services-overview__desc">{{ service.idealFor }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="section__cta">
+      <a href="/services/" class="btn btn--primary">See All Services &amp; Details</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--green">
+  <div class="container">
+    <div class="why-us">
+      <div class="why-us__text">
+        <h2 class="section__title section__title--light">Why Frostline Fence?</h2>
+        <ul class="why-us__list">
+          <li>
+            <strong>Free Estimates</strong>
+            <span>No pressure, no obligation. We come to you and give you a clear, itemized quote.</span>
+          </li>
+          <li>
+            <strong>Licensed &amp; Insured</strong>
+            <span>Fully licensed contractors and liability insurance on every job.</span>
+          </li>
+          <li>
+            <strong>Local &amp; Family-Owned</strong>
+            <span>We live and work in the communities we serve. Your reputation is our reputation.</span>
+          </li>
+          <li>
+            <strong>Quality Materials</strong>
+            <span>We only use materials we'd put around our own property — no shortcuts.</span>
+          </li>
+          <li>
+            <strong>Clean Job Sites</strong>
+            <span>We haul away all debris. You get a finished fence, not a mess to clean up.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="why-us__cta">
+        <p>Ready to get started?</p>
+        <a href="/contact/" class="btn btn--white btn--lg">Request a Free Estimate</a>
+        <p class="why-us__phone"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="service-areas">
+      <h2 class="section__title">Areas We Serve</h2>
+      <ul class="area-list">
+        {% for area in site.serviceAreas %}
+        <li>{{ area }}</li>
+        {% endfor %}
+      </ul>
+      <p class="area-note">Don't see your area? <a href="/contact/">Contact us</a> — we may still be able to help.</p>
+    </div>
+  </div>
+</section>

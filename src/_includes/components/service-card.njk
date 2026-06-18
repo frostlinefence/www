@@ -1,0 +1,12 @@
+<div class="service-card" id="{{ service.id }}">
+  <div class="service-card__icon">{{ service.icon }}</div>
+  <h3 class="service-card__name">{{ service.name }}</h3>
+  <p class="service-card__desc">{{ service.description }}</p>
+  <ul class="service-card__features">
+    {% for feature in service.features %}
+    <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+  <p class="service-card__ideal"><strong>Ideal for:</strong> {{ service.idealFor }}</p>
+  <a href="/contact/" class="btn btn--outline btn--sm">Get an Estimate</a>
+</div>

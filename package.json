@@ -1,0 +1,17 @@
+{
+  "name": "frostlinefence",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Frostline Fence — professional fencing for residential, commercial, and farm use",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=8080",
+    "dev": "eleventy --serve --port=8080",
+    "clean": "rm -rf dist",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}

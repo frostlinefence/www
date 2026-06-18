@@ -2,86 +2,45 @@
 layout: layouts/base.njk
 permalink: /contact/
 title: Contact & Free Estimate
-description: Contact Frostline Fence for a free estimate. We serve residential, commercial, and agricultural properties. Call or fill out our estimate request form.
+description: Contact Frostline Fence for a free estimate. Email us and we'll get back to you within one business day.
 ---
 
 <section class="page-hero">
   <div class="container">
     <h1 class="page-hero__title">Get a Free Estimate</h1>
-    <p class="page-hero__subtitle">Fill out the form below and we'll get back to you within one business day.</p>
+    <p class="page-hero__subtitle">Email us and we'll get back to you within one business day.</p>
   </div>
 </section>
 
 <section class="section section--light">
-  <div class="container">
-    <div class="contact-layout">
+  <div class="container container--narrow">
 
-      <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <ul class="contact-details">
-          <li>
-            <span class="contact-details__label">Email</span>
-            <a href="mailto:{{ site.email }}" class="contact-details__value">{{ site.email }}</a>
-          </li>
-          <li>
-            <span class="contact-details__label">Hours</span>
-            <span class="contact-details__value">{{ site.hours }}</span>
-          </li>
-        </ul>
-
-        <h3>Service Areas</h3>
-        <ul class="area-list">
-          {% for area in site.serviceAreas %}
-          <li>{{ area }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="contact-form-wrap">
-        <h2>Request an Estimate</h2>
-        <form class="estimate-form" name="estimate" method="POST" action="/contact/thank-you/">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="name">Your Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="name" name="name" required autocomplete="name" />
-            </div>
-            <div class="form-field">
-              <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
-              <input type="tel" id="phone" name="phone" required autocomplete="tel" />
-            </div>
-          </div>
-
-          <div class="form-field">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" autocomplete="email" />
-          </div>
-
-          <div class="form-field">
-            <label for="address">Property Address</label>
-            <input type="text" id="address" name="address" autocomplete="street-address" placeholder="Where do you need the fence?" />
-          </div>
-
-          <div class="form-field">
-            <label for="fence-type">Fence Type</label>
-            <select id="fence-type" name="fence-type">
-              <option value="">— Select a type —</option>
-              {% for service in services %}
-              <option value="{{ service.id }}">{{ service.name }}</option>
-              {% endfor %}
-              <option value="not-sure">Not sure yet</option>
-            </select>
-          </div>
-
-          <div class="form-field">
-            <label for="message">Tell Us About Your Project</label>
-            <textarea id="message" name="message" rows="5" placeholder="Approximate footage, current fence condition, any other details that would help us prepare..."></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--lg">Send Estimate Request</button>
-          <p class="form-note">We respond within one business day.</p>
-        </form>
-      </div>
-
+    <div class="contact-cta reveal">
+      <div class="contact-cta__icon">✉</div>
+      <h2>Ready to Get Started?</h2>
+      <p>Send us an email with your project details — property address, fence type, and approximate footage — and we'll put together a free estimate for you.</p>
+      <a href="mailto:{{ site.email }}" class="btn btn--primary btn--lg">{{ site.email }}</a>
     </div>
+
+    <div class="contact-meta reveal">
+      <div class="contact-meta__item">
+        <span class="contact-meta__label">Hours</span>
+        <span class="contact-meta__value">{{ site.hours }}</span>
+      </div>
+      <div class="contact-meta__item">
+        <span class="contact-meta__label">Service Area</span>
+        <span class="contact-meta__value">Twin Cities Metro</span>
+      </div>
+    </div>
+
+    <div class="area-grid reveal">
+      <h3>Communities We Serve</h3>
+      <ul class="area-list area-list--grid">
+        {% for area in site.serviceAreas %}
+        <li>{{ area }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
 </section>
